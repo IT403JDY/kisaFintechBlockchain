@@ -74,9 +74,14 @@ puppeth
 >
 
 geth -datadir . init mynetwork.json => geth genesis를 통해 초기화
+
 geth -datadir . account new -> 비밀번호 입력 확인  => 지갑 생성
+
 #Sanitizing cache to Go's GC limits >>>>>>>>>--lightkdf Reduce key-derivation RAM & CPU usage at some expense of KDF strength
-geth --networkid 4368 --mine --minerthreads 1 --datadir "./" --nodiscover --rpcport 8545  --rpccorsdomain "*" --nat "any" --rpcapi db,eth,net,web3,personal --unlock 0 --password "./password.sec"
+
+geth --networkid 4368 --mine --minerthreads 1 --datadir "./" --nodiscover --rpcport 8545  --rpccorsdomain "*" --nat "any" --
+rpcapi db,eth,net,web3,personal --unlock 0 --password "./password.sec"
+
 =>내 프라이빗 노드에서 mining을 하는 명령어 테스트넷에서는 마이닝이 굳이 필요없기 때문에 안 사용할 수 도 있다. 
 
 geth --testnet --syncmode fast --rpc --rpcapi db,eth,net,web3,personal --cache=1024 --rpcport 8545 --rpcaddr 127.0.0.1 --rpccorsdomain "*" => 테스트넷 연결 명령어 70기가 이상 필요로 bad peer 에러 발생
