@@ -66,16 +66,16 @@ sudo apt-get install ethereum //=> ethereum 추가
 mkdir blockchain
 cd ./blockchain
 puppeth
-#>mynetwork
-#>2 =>genesis block create
-#>1
-#>1
-#>0x => 써져있음 그냥 enter
-#> 그냥 enter
-#>4368 => networkID 설정 쓰면 안되는 ID가 있다.
-#>2
-#>2
-#> 그냥 enter
+- $>mynetwork
+- $>2 =>genesis block create
+- $>1
+- $>1
+- $>0x => 써져있음 그냥 enter
+- $> 그냥 enter
+- $>4368 => networkID 설정 쓰면 안되는 ID가 있다.
+- $>2
+- $>2
+- $> 그냥 enter
 
 geth -datadir . init mynetwork.json //=> geth genesis를 통해 초기화
 
