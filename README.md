@@ -66,16 +66,16 @@ sudo apt-get install ethereum //=> ethereum 추가
 mkdir blockchain
 cd ./blockchain
 puppeth
-$ >mynetwork
-$ >2 =>genesis block create
-$ >1
-$ >1
-$ >0x => 써져있음 그냥 enter
-$ > 그냥 enter
-$ >4368 => networkID 설정 쓰면 안되는 ID가 있다.
-$ >2
-$ >2
-$ > 그냥 enter
+#>mynetwork
+#>2 =>genesis block create
+#>1
+#>1
+#>0x => 써져있음 그냥 enter
+#> 그냥 enter
+#>4368 => networkID 설정 쓰면 안되는 ID가 있다.
+#>2
+#>2
+#> 그냥 enter
 
 geth -datadir . init mynetwork.json //=> geth genesis를 통해 초기화
 
@@ -113,17 +113,4 @@ Ddos공격, 루프문을 통해서 성능 저하를 막고자 가스 개념이 �
 - !ERROR 배포 중  $ > migrate compile -all --reset
 - truffle-config.js //=> development 주석 해제 하고 ip 입력!
 - truffle console --network development
-- $ > migrate    //=>하면 가나슈에서 LOG를 통해 확인할 수 있다.
-
-
-
-
-
-
-
-
-
-
-## https://medium.com/rayonprotocol/%EC%9D%B4%EB%8D%94%EB%A6%AC%EC%9B%80-%EC%8A%A4%EB%A7%88%ED%8A%B8-%EC%BB%A8%ED%8A%B8%EB%9E%99%ED%8A%B8-%EA%B0%9C%EB%B0%9C-%EC%A3%BC%EC%9D%98%EC%82%AC%ED%95%AD-5a1abde1a4e0
-
-=> 스마트 컨트랙트 개발 시 주의 사항 참고 사이트
+- #> migrate    //=>하면 가나슈에서 LOG를 통해 확인할 수 있다.
